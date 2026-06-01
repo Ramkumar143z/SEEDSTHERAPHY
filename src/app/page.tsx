@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 import { Calendar, PlayCircle, Shield, CheckCircle2, Phone, BrainCircuit, Users, HeartHandshake, Puzzle, Smile, Activity, MessageCircle, Star, Sparkles, Clock, ArrowRight, Mail, MapPin } from "lucide-react";
 import { FadeIn, SlideInLeft, SlideInRight, ScaleIn, StaggerContainer, StaggerItem } from "@/components/animations";
@@ -27,7 +28,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="flex items-center justify-between px-8 py-5 sticky top-0 z-50 bg-bg/90 backdrop-blur-md">
         <div className="flex items-center gap-3">
-          <img 
+          <Image 
             src="/images/image.png" 
             alt="SEEDs Therapy Center Logo" 
             width={48} 
@@ -118,7 +119,7 @@ export default function Home() {
           <div className="relative w-full max-w-[550px]">
              {/* Masked Image container */}
              <div className="w-full relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-500">
-                <img 
+                <Image 
                    src="/images/hero_therapist_child_1780133652125.png" 
                    alt="Therapist and Child" 
                    width={800} 
@@ -185,7 +186,7 @@ export default function Home() {
           {/* Card 1 */}
           <StaggerItem className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
             <div className="w-40 h-40 relative mb-6 rounded-full overflow-hidden bg-soft-green/30 p-2">
-               <img src="/images/physiotherapy_illustration_1780133669136.png" alt="Physiotherapy" className="w-full h-full object-contain p-2 mix-blend-multiply" />
+               <Image src="/images/physiotherapy_illustration_1780133669136.png" alt="Physiotherapy" fill className="object-contain p-2 mix-blend-multiply" />
             </div>
             <h3 className="font-bold text-primary text-xl mb-3">Physiotherapy</h3>
             <p className="text-sm text-text-light mb-6 flex-grow leading-relaxed">Improving strength, mobility, balance, and coordination through fun and effective therapy sessions.</p>
@@ -197,7 +198,7 @@ export default function Home() {
           {/* Card 2 */}
           <StaggerItem className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
             <div className="w-40 h-40 relative mb-6 rounded-full overflow-hidden bg-soft-green/30 p-2">
-               <img src="/images/occupational_therapy_illustration_1780133686844.png" alt="Occupational Therapy" className="w-full h-full object-contain p-2 mix-blend-multiply" />
+               <Image src="/images/occupational_therapy_illustration_1780133686844.png" alt="Occupational Therapy" fill className="object-contain p-2 mix-blend-multiply" />
             </div>
             <h3 className="font-bold text-primary text-xl mb-3">Occupational Therapy</h3>
             <p className="text-sm text-text-light mb-6 flex-grow leading-relaxed">Helping children develop daily life skills, fine motor abilities, and independence.</p>
@@ -209,7 +210,7 @@ export default function Home() {
           {/* Card 3 */}
           <StaggerItem className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
             <div className="w-40 h-40 relative mb-6 rounded-full overflow-hidden bg-soft-green/30 p-2">
-               <img src="/images/speech_therapy_illustration_1780133704729.png" alt="Speech Therapy" className="w-full h-full object-contain p-2 mix-blend-multiply" />
+               <Image src="/images/speech_therapy_illustration_1780133704729.png" alt="Speech Therapy" fill className="object-contain p-2 mix-blend-multiply" />
             </div>
             <h3 className="font-bold text-primary text-xl mb-3">Speech Therapy</h3>
             <p className="text-sm text-text-light mb-6 flex-grow leading-relaxed">Enhancing communication skills, speech clarity, and language development.</p>
@@ -221,7 +222,7 @@ export default function Home() {
           {/* Card 4 */}
           <StaggerItem className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
             <div className="w-40 h-40 relative mb-6 rounded-full overflow-hidden bg-soft-green/30 p-2">
-               <img src="/images/behavioral_therapy_illustration_1780133728434.png" alt="Behavioral Therapy" className="w-full h-full object-contain p-2 mix-blend-multiply" />
+               <Image src="/images/behavioral_therapy_illustration_1780133728434.png" alt="Behavioral Therapy" fill className="object-contain p-2 mix-blend-multiply" />
             </div>
             <h3 className="font-bold text-primary text-xl mb-3">Behavioral Therapy</h3>
             <p className="text-sm text-text-light mb-6 flex-grow leading-relaxed">Supporting positive behavior, emotional regulation, and social skills.</p>
@@ -296,10 +297,10 @@ export default function Home() {
             <SlideInRight className="flex-1 relative h-[450px] w-full flex items-center justify-center">
                {/* Collage of Images */}
                <div className="relative w-72 h-72 md:w-[350px] md:h-[350px] z-10 rounded-[40px] overflow-hidden shadow-2xl border-8 border-bg transform -translate-x-12 -translate-y-8 bg-soft-green/30">
-                  <img src="/images/kids_playroom_1780133745469.png" alt="Playroom" className="w-full h-full object-cover mix-blend-multiply opacity-90" />
+                  <Image src="/images/kids_playroom_1780133745469.png" alt="Playroom" fill className="object-cover mix-blend-multiply opacity-90" />
                </div>
                <div className="absolute z-20 w-56 h-56 rounded-full overflow-hidden shadow-xl border-8 border-bg transform translate-x-20 translate-y-20 bg-surface animate-float">
-                  <img src="/images/child_handprints_1780133762637.png" alt="Happy child" className="w-full h-full object-cover" />
+                  <Image src="/images/child_handprints_1780133762637.png" alt="Happy child" fill className="object-cover" />
                </div>
             </SlideInRight>
          </div>
@@ -393,7 +394,7 @@ export default function Home() {
             {/* Brand & Socials */}
             <div className="space-y-6">
                <div className="flex items-center gap-3">
-                  <img src="/images/image.png" alt="SEEDs Therapy Logo" width={48} height={48} className="rounded-full bg-surface p-1" />
+                  <Image src="/images/image.png" alt="SEEDs Therapy Logo" width={48} height={48} className="rounded-full bg-surface p-1" />
                   <span className="font-extrabold tracking-tight text-xl">SEEDs Therapy</span>
                </div>
                <p className="text-sm opacity-80 leading-relaxed font-medium max-w-xs">
