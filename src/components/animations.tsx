@@ -94,17 +94,4 @@ export function StaggerItem({ children, className = "" }: { children: ReactNode,
   );
 }
 
-export function ZigzagItem({ children, className = "", index = 0 }: { children: ReactNode, className?: string, index?: number }) {
-  const xOffset = index % 2 === 0 ? -200 : 200;
-  return (
-    <motion.div
-      variants={{
-        hidden: { opacity: 0, x: xOffset, y: 50 },
-        show: { opacity: 1, x: 0, y: 0, transition: { duration: 0.8, ease: "backOut" } }
-      }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
+

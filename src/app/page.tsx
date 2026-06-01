@@ -1,6 +1,6 @@
 
 import { Calendar, PlayCircle, Shield, CheckCircle2, Phone, BrainCircuit, Users, HeartHandshake, Puzzle, Smile, Activity, MessageCircle, Star, Sparkles, Clock, ArrowRight, Mail, MapPin } from "lucide-react";
-import { FadeIn, SlideInLeft, SlideInRight, ScaleIn, StaggerContainer, StaggerItem, ZigzagItem } from "@/components/animations";
+import { FadeIn, SlideInLeft, SlideInRight, ScaleIn, StaggerContainer, StaggerItem } from "@/components/animations";
 
 export default function Home() {
   return (
@@ -183,7 +183,7 @@ export default function Home() {
         
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Card 1 */}
-          <ZigzagItem index={0} className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
+          <StaggerItem className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
             <div className="w-40 h-40 relative mb-6 rounded-full overflow-hidden bg-soft-green/30 p-2">
                <img src="/images/physiotherapy_illustration_1780133669136.png" alt="Physiotherapy" className="w-full h-full object-contain p-2 mix-blend-multiply" />
             </div>
@@ -192,10 +192,10 @@ export default function Home() {
             <a href="#" className="text-primary font-bold text-sm flex items-center justify-center gap-2 group w-full border-t border-soft-green pt-4">
                Learn More <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform"/>
             </a>
-          </ZigzagItem>
+          </StaggerItem>
 
           {/* Card 2 */}
-          <ZigzagItem index={1} className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
+          <StaggerItem className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
             <div className="w-40 h-40 relative mb-6 rounded-full overflow-hidden bg-soft-green/30 p-2">
                <img src="/images/occupational_therapy_illustration_1780133686844.png" alt="Occupational Therapy" className="w-full h-full object-contain p-2 mix-blend-multiply" />
             </div>
@@ -204,10 +204,10 @@ export default function Home() {
             <a href="#" className="text-primary font-bold text-sm flex items-center justify-center gap-2 group w-full border-t border-soft-green pt-4">
                Learn More <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform"/>
             </a>
-          </ZigzagItem>
+          </StaggerItem>
 
           {/* Card 3 */}
-          <ZigzagItem index={2} className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
+          <StaggerItem className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
             <div className="w-40 h-40 relative mb-6 rounded-full overflow-hidden bg-soft-green/30 p-2">
                <img src="/images/speech_therapy_illustration_1780133704729.png" alt="Speech Therapy" className="w-full h-full object-contain p-2 mix-blend-multiply" />
             </div>
@@ -216,10 +216,10 @@ export default function Home() {
             <a href="#" className="text-primary font-bold text-sm flex items-center justify-center gap-2 group w-full border-t border-soft-green pt-4">
                Learn More <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform"/>
             </a>
-          </ZigzagItem>
+          </StaggerItem>
 
           {/* Card 4 */}
-          <ZigzagItem index={3} className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
+          <StaggerItem className="bg-surface p-8 rounded-[40px] text-center hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl border border-soft-green flex flex-col items-center">
             <div className="w-40 h-40 relative mb-6 rounded-full overflow-hidden bg-soft-green/30 p-2">
                <img src="/images/behavioral_therapy_illustration_1780133728434.png" alt="Behavioral Therapy" className="w-full h-full object-contain p-2 mix-blend-multiply" />
             </div>
@@ -228,7 +228,7 @@ export default function Home() {
             <a href="#" className="text-primary font-bold text-sm flex items-center justify-center gap-2 group w-full border-t border-soft-green pt-4">
                Learn More <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform"/>
             </a>
-          </ZigzagItem>
+          </StaggerItem>
         </StaggerContainer>
       </section>
 
